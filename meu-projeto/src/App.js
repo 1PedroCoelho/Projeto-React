@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
   const name = 'pedrobosta'
@@ -16,6 +17,7 @@ function App() {
       <p>Olá {name}</p>
       <p>Soma {soma(2, 3)}</p>
       <img src={url} alt='minha imagem' />
+      <HelloWorld/>
 
     </div>
   );
