@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const name = 'pedrobosta'
-
-  function soma(a, b) {
-    return a + b
-  }
-  const url = 'https://via.placeholder.com/150'
-
+  const nome = "Maria"
   return (
     <div className="App">
+      
+      <SayMyName nome="Pedro" />
+      <SayMyName nome={nome} />
 
-      <h1>Olá React</h1>
-      <p>Olá {name}</p>
-      <p>Soma {soma(2, 3)}</p>
-      <img src={url} alt='minha imagem' />
-      <HelloWorld/>
-
+      <Pessoa
+        nome="Rodrigo"
+        idade="20"
+        profissao="programador"
+        foto="https://via.placeholder.com/150" />
     </div>
   );
 }
